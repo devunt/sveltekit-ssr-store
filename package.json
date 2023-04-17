@@ -1,7 +1,7 @@
 {
 	"name": "svelte-stores",
 	"type": "module",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"license": "MIT",
 	"description": "Safe stores for SvelteKit",
 	"homepage": "https://github.com/devunt/svelte-stores#readme",
