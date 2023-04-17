@@ -45,6 +45,11 @@ With `svelte-stores`, you can safely use shared stores in your SvelteKit app in 
 Currently only the `writable` store is modified since it is the only store that is not safe to use with SSR. Other stores does not save any state within them, so they are fundamentally safe to use with SSR (unless you kept a state in a global variable somewhere else in your code. please don't to that).
 
 
+## Implementation detail
+
+Since it is relatively simple, you can have a look at [code](https://github.com/devunt/svelte-stores/blob/main/src/lib/writable.ts).
+
+
 ## Authors
 
 - [@devunt](https://github.com/devunt)
