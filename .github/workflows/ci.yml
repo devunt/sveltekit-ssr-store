@@ -1,0 +1,62 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check:
+    name: Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Generate required files
+        run: pnpm run bootstrap
+
+      - name: Run check
+        run: pnpm run check
+
+  eslint:
+    name: ESLint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Generate required files
+        run: pnpm run bootstrap
+
+      - name: Run lint
+        run: pnpm run lint
