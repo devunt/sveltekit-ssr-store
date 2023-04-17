@@ -15,6 +15,7 @@
 		"sveltekit",
 		"svelte-kit"
 	],
+	"types": "./dist/index.d.ts",
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
