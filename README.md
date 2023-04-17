@@ -29,7 +29,7 @@ Some of the stores are modified to be safe to use with SvelteKit SSR.
 - import { get, writable, derived, type Updater } from "svelte/store";
 + import { get, writable, derived, type Updater } from "svelte-stores";
   
-  const count = writable(0);
+  export const count = writable(0); // Safe to use with SSR!
 ```
 
 
