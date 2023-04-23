@@ -1,14 +1,14 @@
 {
-	"name": "svelte-stores",
+	"name": "@svelte-kits/store",
 	"type": "module",
 	"version": "0.1.1",
 	"license": "MIT",
 	"description": "Safe stores for SvelteKit",
-	"homepage": "https://github.com/devunt/svelte-stores#readme",
+	"homepage": "https://github.com/svelte-kits/store#readme",
 	"author": "Bae Junehyeon <devunt@gmail.com>",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/devunt/svelte-stores.git"
+		"url": "https://github.com/svelte-kits/store.git"
 	},
 	"keywords": [
 		"svelte",
