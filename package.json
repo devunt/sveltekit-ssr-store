@@ -1,7 +1,7 @@
 {
 	"name": "@svelte-kits/store",
 	"type": "module",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"license": "MIT",
 	"description": "Safe stores for SvelteKit",
 	"homepage": "https://github.com/svelte-kits/store#readme",
@@ -38,7 +38,7 @@
 	},
 	"peerDependencies": {
 		"@sveltejs/kit": "^1.0.0",
-		"svelte": "^3.0.0"
+		"svelte": "^3.0.0 || ^4.0.0"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",
